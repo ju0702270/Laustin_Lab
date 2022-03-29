@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Documents/javaLib/laustinlib/javafx-sdk-11.0.2/lib" />
+      <root url="file://$USER_HOME$/Documents/javaLib/laustinlib/junit/4.12" />
+      <root url="jar://$USER_HOME$/Documents/javaLib/laustinlib/javax.activation-1.2.0.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/javaLib/laustinlib/jfoenix-9.0.10.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/javaLib/laustinlib/mail.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/javaLib/laustinlib/mysql-connector-java-5.1.48.jar!/" />
+      <root url="file://$USER_HOME$/Documents/javaLib/laustinlib/poi-5.0.0" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/Documents/javaLib/laustinlib/poi-5.0.0/docs/apidocs/dev" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Documents/javaLib/laustinlib/javafx-sdk-11.0.2/lib" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Documents/javaLib/laustinlib/javafx-sdk-11.0.2/lib" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Documents/javaLib/laustinlib/junit/4.12" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Documents/javaLib/laustinlib/poi-5.0.0" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Documents/javaLib/laustinlib/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>

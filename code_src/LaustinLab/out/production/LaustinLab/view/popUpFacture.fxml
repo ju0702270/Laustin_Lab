@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="634.0" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutY="7.0" prefHeight="619.0" prefWidth="634.0" spacing="40.0" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+         <children>
+            <AnchorPane prefHeight="52.0" prefWidth="634.0">
+               <children>
+                  <Label alignment="TOP_CENTER" layoutX="29.0" layoutY="6.0" text="%view.utilisateur" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="40.0" />
+                  <JFXComboBox fx:id="comboUtilsateur" focusColor="#009dac" layoutX="153.0" layoutY="2.0" prefHeight="25.0" prefWidth="467.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="30.0" prefHeight="52.0" prefWidth="634.0">
+               <children>
+                  <Label alignment="TOP_CENTER" layoutX="29.0" layoutY="6.0" text="%view.client" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="40.0" />
+                  <JFXComboBox fx:id="comboClient" focusColor="#009dac" layoutX="153.0" layoutY="2.0" prefHeight="25.0" prefWidth="467.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="104.0" prefHeight="52.0" prefWidth="634.0">
+               <children>
+                  <Label alignment="TOP_CENTER" layoutX="29.0" layoutY="6.0" text="%view.entreprise" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="40.0" />
+                  <JFXComboBox fx:id="comboEntreprise" focusColor="#009dac" layoutX="153.0" layoutY="2.0" prefHeight="25.0" prefWidth="467.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="160.0" maxWidth="1.7976931348623157E308" prefHeight="11.0" prefWidth="634.0">
+               <children>
+                  <Label alignment="TOP_CENTER" layoutX="29.0" layoutY="6.0" text="%view.dateheure" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="40.0">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+                  <JFXDatePicker fx:id="dpDateHeure" defaultColor="BLACK" layoutX="110.0" layoutY="-1.0" prefHeight="30.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="0.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="160.0" minHeight="-Infinity" prefHeight="37.0" prefWidth="634.0">
+               <children>
+                  <Label alignment="TOP_CENTER" layoutX="29.0" layoutY="6.0" text="%view.lignefacture" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="40.0" />
+                  <JFXButton layoutX="558.0" layoutY="17.0" onAction="#addLine" text="+" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="30.0" />
+                  <JFXComboBox fx:id="comboLigne" focusColor="#009dac" layoutX="133.0" layoutY="21.0" onAction="#initSpinner" prefHeight="25.0" prefWidth="254.0" style="-fx-border-image-insets: red;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="180.0" />
+                  <Spinner fx:id="spinQuantity" layoutX="465.0" layoutY="3.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="37.0" prefWidth="84.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox fx:id="vBoxLiFac" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="192.0" prefWidth="632.0" spacing="10.0" style="-fx-background-color: grey;" />
+               </content>
+               <VBox.margin>
+                  <Insets top="-20.0" />
+               </VBox.margin>
+            </ScrollPane>
+            <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="384.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="TOTAL">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="lblTotalCreate" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="75.0" text="0,00">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" text="€">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="-20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER" layoutY="671.0" prefHeight="37.0" prefWidth="384.0" spacing="40.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton fx:id="btnConfirmFact" alignment="CENTER" contentDisplay="CENTER" onAction="#createFacture" text="%view.confirm" />
+            <JFXButton fx:id="comboCancelFact" alignment="CENTER" contentDisplay="CENTER" onAction="#closeCreateStage" text="%view.cancel" />
+            <JFXCheckBox fx:id="checkBoxSendFact" text="%view.sendMail" />
+         </children>
+         <padding>
+            <Insets left="15.0" right="15.0" />
+         </padding>
+      </HBox>
+      <ImageView fitHeight="28.0" fitWidth="136.0" layoutX="504.0" layoutY="625.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <image>
+            <Image url="@../img/laustinLabBlack.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

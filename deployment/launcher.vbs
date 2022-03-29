@@ -1,0 +1,4 @@
+Set oShell = CreateObject ("Wscript.Shell") 
+Dim strArgs
+strArgs = "cmd /c java --module-path ""lib\javafx-sdk-11.0.2\lib"" --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,com.jfoenix --add-opens java.base/java.lang.reflect=com.jfoenix --add-exports javafx.controls/com.sun.javafx.scene.control.behavior=com.jfoenix --add-exports javafx.controls/com.sun.javafx.scene.control=com.jfoenix --add-exports javafx.base/com.sun.javafx.binding=com.jfoenix --add-exports javafx.graphics/com.sun.javafx.stage=com.jfoenix --add-exports javafx.base/com.sun.javafx.event=com.jfoenix -jar LaustinLab.jar"
+oShell.Run strArgs, 0, false

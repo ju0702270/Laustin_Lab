@@ -1,0 +1,31 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LaustinLab:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LaustinLab_jar</output-path>
+    <root id="archive" name="LaustinLab.jar">
+      <element id="module-output" name="LaustinLab" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/javax.activation-1.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/jfoenix-9.0.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/mail.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/mysql-connector-java-5.1.48.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/javafx-sdk-11.0.2/lib/src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/javafx-sdk-11.0.2/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/javafx-sdk-11.0.2/lib/javafx.web.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/javafx-sdk-11.0.2/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/javafx-sdk-11.0.2/lib/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/javafx-sdk-11.0.2/lib/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/javafx-sdk-11.0.2/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/javafx-sdk-11.0.2/lib/jfoenix-9.0.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/javafx-sdk-11.0.2/lib/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/javafx-sdk-11.0.2/lib/javafx.graphics.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/junit/4.12/junit-4.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/poi-5.0.0/poi-5.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/poi-5.0.0/poi-ooxml-5.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/poi-5.0.0/poi-examples-5.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/poi-5.0.0/poi-excelant-5.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/poi-5.0.0/poi-ooxml-full-5.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/poi-5.0.0/poi-ooxml-lite-5.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/poi-5.0.0/poi-scratchpad-5.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/javaLib/laustinlib/poi-5.0.0/poi-integration-5.0.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

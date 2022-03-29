@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="28.0" fitWidth="136.0" layoutX="462.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <image>
+            <Image url="@../img/laustinLabBlack.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="360.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" layoutX="9.0" layoutY="6.0" prefHeight="17.0" prefWidth="180.0" text="%view.concentration.libelle" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
+                  <TableView fx:id="tableConcentration" layoutX="30.0" layoutY="27.0" prefHeight="221.0" prefWidth="180.0" AnchorPane.bottomAnchor="112.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="27.0">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <columns>
+                        <TableColumn fx:id="tableColumnDose" prefWidth="75.0" text="%view.concentration.dose" />
+                        <TableColumn fx:id="tableColumnSymbole" prefWidth="75.0" text="%view.concentration.symbole" />
+                     </columns>
+                     <contextMenu>
+                        <ContextMenu>
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#updateConcentration" text="%view.update" />
+                              <MenuItem mnemonicParsing="false" onAction="#deleteConcentration" text="%view.delete" />
+                           </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TableView>
+                  <HBox alignment="CENTER" layoutY="289.0" prefHeight="28.0" prefWidth="200.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <JFXButton fx:id="btnCreateConcentration" onAction="#createConcentration" text="%view.create" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="HBboxConcentration" alignment="CENTER" disable="true" layoutX="10.0" layoutY="260.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="180.0" spacing="10.0" visible="false" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                     <children>
+                        <JFXTextField fx:id="tfDose" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="85.0" promptText="dose" HBox.hgrow="ALWAYS" />
+                        <JFXTextField fx:id="tfSymbole" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" minHeight="-Infinity" onAction="#addConcentration" prefHeight="25.0" prefWidth="85.0" promptText="symbole" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="360.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" layoutX="9.0" layoutY="6.0" prefHeight="17.0" prefWidth="180.0" text="%view.forme.libelle" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
+                  <TableView fx:id="tableForme" layoutX="30.0" layoutY="27.0" prefHeight="221.0" prefWidth="180.0" AnchorPane.bottomAnchor="112.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="27.0">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <columns>
+                        <TableColumn fx:id="tableColumnLibForme" prefWidth="75.0" text="%view.forme.libelle" />
+                        <TableColumn fx:id="tableColumnEtat" prefWidth="75.0" text="%view.forme.etat" />
+                     </columns>
+                     <contextMenu>
+                        <ContextMenu>
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#updateForme" text="%view.update" />
+                              <MenuItem mnemonicParsing="false" onAction="#deleteForme" text="%view.delete" />
+                           </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TableView>
+                  <HBox alignment="CENTER" layoutY="289.0" prefHeight="28.0" prefWidth="200.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <JFXButton fx:id="btnCreateForme" onAction="#createForme" text="%view.create" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="HBoxForme" alignment="CENTER" disable="true" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="180.0" spacing="10.0" visible="false" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                     <children>
+                        <JFXTextField fx:id="tfLibelle" maxHeight="-Infinity" minHeight="-Infinity" prefColumnCount="0" prefHeight="25.0" prefWidth="85.0" promptText="libelle" HBox.hgrow="ALWAYS" />
+                        <JFXComboBox fx:id="comboEtat" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="25.0" prefWidth="85.0" promptText="ETAT" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="410.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="360.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" layoutX="9.0" layoutY="6.0" prefHeight="17.0" prefWidth="180.0" text="%view.conditionnement.libelle" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
+                  <TableView fx:id="tableConditionnement" layoutX="30.0" layoutY="27.0" prefHeight="221.0" prefWidth="180.0" AnchorPane.bottomAnchor="112.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="27.0">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <columns>
+                        <TableColumn fx:id="tableColumnUnite" prefWidth="75.0" text="%view.conditionnement.unite" />
+                     </columns>
+                     <contextMenu>
+                        <ContextMenu>
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#updateConditionnement" text="%view.update" />
+                              <MenuItem mnemonicParsing="false" onAction="#deleteConditionnement" text="%view.delete" />
+                           </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TableView>
+                  <HBox alignment="CENTER" layoutY="289.0" prefHeight="28.0" prefWidth="200.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <JFXButton fx:id="btnCreateCondit" onAction="#createConditionnement" text="%view.create" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="HBoxCondtionnement" alignment="CENTER" disable="true" prefHeight="25.0" prefWidth="180.0" spacing="10.0" visible="false" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                     <children>
+                        <Spinner fx:id="spinConcentration" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="84.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

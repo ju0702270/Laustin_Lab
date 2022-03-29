@@ -1,0 +1,225 @@
+* {
+    -fx-primary : #006685;
+    -fx-secondary : #00798d;
+    -fx-button-primary : #0096c9;
+    -fx-button-secondary : #007da7;
+    -fx-primarytext : #ffffff;
+    -fx-gradient :  linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-color-1:#1976D2;
+}
+
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-button-primary;
+    -fx-background-radius: 0.7em;
+    -fx-font-size: 10pt;
+}
+
+.button:hover, .button:hover{
+    -fx-background-color: -fx-button-secondary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+.button:pressed{
+    -fx-background-color: #00ace6;
+    -fx-text-fill: -fx-primarytext;
+    -fx-opacity: 10;
+}
+
+.button-menu-home{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: transparent;
+        -fx-background-radius: none;
+    -fx-font-size: 10pt;
+}
+
+.button-menu-home:hover, .button-menu:hover{
+    -fx-opacity: 10;
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-radius: none;
+}
+
+.button-menu-home:pressed{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-radius: none;
+    -fx-opacity: 10;
+}
+
+.h2{
+    -fx-font-size: 12pt;
+
+}
+
+.main-menu{
+    -fx-base: #ffffff;
+    -fx-border-radius: none;
+}
+
+.text-field
+{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size : 12pt;
+    -jfx-focus-color: -fx-secondary;
+    -fx-text-fill: derive(-fx-secondary, 20%);
+}
+
+.tab{
+    -fx-background-color: -fx-primary;
+}
+
+.jfx-tab-pane .tab-header-area .jfx-rippler{
+    -jfx-rippler-fill :-fx-primarytext;
+
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-background-color: -fx-primarytext;
+}
+
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+
+.tab-label{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size: 10pt;
+}
+
+
+.tab-main{
+    -fx-max-height : 60;
+}
+
+.settings-tab{
+    -fx-background-color: derive(-fx-primary, 10%);
+    -fx-padding: 5px 20px 5px 20px;
+}
+
+.settings-tab:selected{
+    -fx-background-color: -fx-primarytext;
+}
+
+.settings-tab:selected .tab-label{
+    -fx-text-fill: -fx-primary;
+}
+
+.settings-tab .tab-header-background{
+    -fx-background-color: derive(-fx-primary, -50%);
+}
+
+.context-menu {
+    -fx-background-color:  #ffffff;
+    -fx-font-size: 14;
+    -fx-min-width: 150px;
+}
+
+.main-text
+{
+    -fx-fill: -fx-secondary;
+    -fx-font-size: 14pt;
+    -fx-text-alignment: center;
+}
+
+.submission-container{
+    -fx-background-color: derive(-fx-button-primary, 10%);
+}
+.combo-box .cell:hover {
+-fx-background-color: -fx-button-primary;
+-fx-text-fill: white;
+}
+
+.dialog-button{
+    -fx-border-color: -fx-color-1;
+    -fx-text-fill: white;
+    -fx-border-radius: 1px;
+    -fx-background-radius: 3px;
+}
+
+.dialog-button:hover{
+    -fx-background-color: -fx-color-1;
+    -fx-border-color: derive(-fx-color-1, -20%);
+    -fx-text-fill: white;
+}
+
+.jfx-layout-actions
+{
+    -fx-hgap:8;
+}
+
+.table-view{
+    -fx-background-color: derive(-fx-primary, 10%);
+    -fx-font-size: 16px;
+    -fx-border-color: derive(-fx-secondary, -60%);
+}
+.table-view:focused{
+    -fx-background-color: -fx-button-primary;
+}
+.table-row-cell {
+    -fx-cell-size: 40px;
+}
+.table-view .column-header-background{
+    -fx-background-color: -fx-primary;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+.table-row-cell:focused, .table-cell:focused{
+    -fx-text-fill: -fx-primarytext;
+}
+.table-row-cell{
+    -fx-background-color: -fx-primary;
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+.table-column{
+    -fx-alignment: CENTER;
+}
+.table-row-cell:even{
+    -fx-background-color: derive(-fx-primary, 10%);
+}
+.table-row-cell:selected {
+    -fx-background-color: #009f85;
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-insets: 0;
+}
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: -fx-primarytext;
+}
+.placeholder .label{
+    -fx-text-fill: white;
+}
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-text-fill: white;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb{
+    -fx-background-color: derive(-fx-primary, 60%);
+    -fx-border-color: transparent;
+    -fx-background-radius: 5em;
+}
+.table-view .filler{
+    -fx-fill: -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+.table-context
+{
+    -fx-base: -fx-primary;
+}

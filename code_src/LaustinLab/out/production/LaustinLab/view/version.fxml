@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="396.0" prefWidth="508.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Version">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/iramps.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="302.0" layoutY="54.0" text="Laustin Lab V1.0">
+         <font>
+            <Font name="Cambria Math" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="281.0" layoutY="344.0" text="2020-2021 IRAMPS Laustin industrie" />
+      <ImageView fitHeight="79.0" fitWidth="150.0" layoutX="28.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/laustinLabWhite.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scrollpanVersion" layoutX="28.0" layoutY="104.0" prefHeight="200.0" prefWidth="452.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorMaster" prefHeight="638.0" prefWidth="775.0" style="-fx-background-color: transparent;" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="301.0" layoutY="46.0" prefHeight="407.0" prefWidth="248.0" style="-fx-background-color: white; -fx-background-radius: 0.7em;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="310.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="6.0" layoutY="-5.0" prefHeight="588.0" prefWidth="455.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="-5.0">
+               <children>
+                  <Label contentDisplay="TEXT_ONLY" text="%view.login.authentification">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="220.0" text="%view.login.pseudo">
+                     <VBox.margin>
+                        <Insets top="60.0" />
+                     </VBox.margin></Label>
+                  <JFXTextField fx:id="textfield_pseudo" focusColor="#009dac" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#connectUtilisateur" prefHeight="0.0" prefWidth="216.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets></JFXTextField>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="222.0" text="%view.login.Password">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin></Label>
+                  <JFXPasswordField fx:id="passwordfield_password" focusColor="#009dac" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#connectUtilisateur" prefHeight="14.0" prefWidth="220.0" />
+                  <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="252.0" text="%view.login.errorlabel" textFill="#ff0404" visible="false">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <JFXButton onAction="#connectUtilisateur" ripplerFill="#026d77" text="%view.login.button_connection">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <Hyperlink fx:id="link_inscription" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#openInscription" prefHeight="23.0" prefWidth="155.0" text="%view.login.link_inscription" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="60.0" top="20.0" />
+                     </VBox.margin></Hyperlink>
+               </children>
+            </VBox>
+            <MenuButton fx:id="btnLang" layoutX="371.0" layoutY="551.0" mnemonicParsing="false" text="%view.login.langmenu" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#changeLang" text="fr_BE" />
+                <MenuItem mnemonicParsing="false" onAction="#changeLang" text="en_US" />
+              </items>
+            </MenuButton>
+            <Button mnemonicParsing="false" onAction="#closeStage" style="-fx-background-color: red;" text="X" textFill="#f8f8f8" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="17.0" />
+         </children>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="16.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="314.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); -fx-background-radius: 2em;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="256.0" layoutX="35.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="291.0">
+               <image>
+                  <Image url="@../img/laustinLabWhite.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </ImageView>
+         </children>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </AnchorPane>
+   </children>
+</AnchorPane>

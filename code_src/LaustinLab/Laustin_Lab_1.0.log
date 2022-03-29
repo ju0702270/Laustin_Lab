@@ -1,0 +1,43 @@
+[2021-03-18T18:47:09.605904900] : class exceptions.DBException	null
+[2021-03-18T18:57:30.942114200] : class exceptions.DBException	null
+[2021-03-18T18:57:47.545619] : class exceptions.DBException	null
+[2021-03-18T18:58:54.481307400] : class exceptions.DBException	null
+[2021-03-18T18:59:48.696906100] : class exceptions.DBException	findAll() :une erreur est survenue dans la recherche de l'Utilisateur.
+[2021-03-18T18:59:53.667094900] : class exceptions.DBException	null
+[2021-03-18T19:00:50.385754900] : class java.lang.NullPointerException	l'Utilisateur utilisé est null ou l'un de ses attributs est null. la création n'a pas abouti.
+[2021-03-18T19:01:06.003287300] : class java.lang.NullPointerException	l'Utilisateur utilisé est null ou l'un de ses attributs est null. la création n'a pas abouti.
+[2021-03-18T19:01:10.523734] : class java.lang.NullPointerException	l'Utilisateur utilisé est null ou l'un de ses attributs est null. la création n'a pas abouti.
+[2021-03-18T19:01:12.398100600] : class exceptions.DBException	null
+[2021-03-18T19:03:31.168330300] : class exceptions.DBException	findAll() :une erreur est survenue dans la recherche de l'Utilisateur.
+[2021-03-18T19:03:39.274705800] : class exceptions.DBException	null
+[2021-03-18T19:04:54.688513700] : class exceptions.DBException	findAll() :une erreur est survenue dans la recherche de l'Utilisateur.
+[2021-03-18T19:09:13.142579800] : class exceptions.DBException	findAll() :une erreur est survenue dans la recherche de l'Utilisateur.
+[2021-03-18T19:09:37.046274900] : class exceptions.DBException	findAll() :une erreur est survenue dans la recherche de l'Utilisateur.
+[2021-03-18T19:09:40.514140600] : class exceptions.DBException	null
+[2021-03-18T19:18:17.034015300] : class exceptions.DBException	null
+[2021-03-18T19:18:45.985061100] : class exceptions.DBException	findAll() :une erreur est survenue dans la recherche de l'Utilisateur.
+[2021-03-18T19:18:48.887984] : class exceptions.DBException	null
+[2021-03-18T19:19:23.400420700] : class exceptions.DBException	findAll() :une erreur est survenue dans la recherche de l'Utilisateur.
+[2021-03-18T19:19:25.944007900] : class exceptions.DBException	null
+[2021-03-18T19:20:24.030520300] : class exceptions.DBException	null
+[2021-03-18T19:21:57.464698100] : class java.lang.NullPointerException	l'Utilisateur utilisé est null ou l'un de ses attributs est null. la création n'a pas abouti.
+[2021-03-18T19:22:02.865400] : class exceptions.DBException	null
+[2021-03-18T19:23:45.989190300] : class exceptions.DBException	findAll() :une erreur est survenue dans la recherche de l'Utilisateur.
+[2021-03-18T19:23:49.295003600] : class exceptions.DBException	null
+[2021-03-18T19:24:39.345780700] : class exceptions.DBException	findAll() :une erreur est survenue dans la recherche de l'Utilisateur.
+[2021-03-18T19:24:41.720119500] : class exceptions.DBException	null
+[2021-03-18T19:27:21.390426900] : class exceptions.DBException	null
+[2021-03-18T19:27:24.099435900] : class exceptions.DBException	findAll() :une erreur est survenue dans la recherche de l'Utilisateur.
+[2021-03-18T19:27:26.231102500] : class exceptions.DBException	null
+[2021-03-18T19:28:03.247147200] : class exceptions.DBException	null
+[2021-03-18T19:28:07.496323300] : class exceptions.DBException	findAll() :une erreur est survenue dans la recherche de l'Utilisateur.
+[2021-03-18T19:28:10.382545500] : class exceptions.DBException	null
+[2021-03-18T19:30:14.143459700] : class exceptions.DBException	null
+[2021-03-18T19:30:14.152312100] : class exceptions.DBException	null
+[2021-03-18T19:30:18.320407300] : class exceptions.DBException	null
+[2021-03-18T19:30:38.460119500] : class exceptions.DBException	null
+[2021-03-18T19:30:38.469594] : class exceptions.DBException	null
+[2021-03-18T19:30:42.494879500] : class exceptions.DBException	null
+[2021-03-18T19:37:24.952301400] : class exceptions.DBException	null
+[2021-03-18T19:37:35.107785100] : class exceptions.DBException	null
+[2021-03-18T19:37:39.948772] : class exceptions.DBException	null
